@@ -17,19 +17,20 @@ public class Test {
         Scanner sc = new Scanner (System.in);
         System.out.println("enter the number:");
         int number = sc.nextInt();
+        int temp = number;
         
         int i = 0;
         int sum = 0;
 
-        while(number<=0){
+        while(number>0){
         i = number % 10;
-        number = number - (number/10);
+        number = (number/10);
         sum = sum + factorial(i);
-        i++;
         }
 
         System.out.println("sum is: "+ sum);
-        if (sum == number){
+       
+        if (sum == temp){
 
            System.out.println( "it is a strong number");
         } else {
