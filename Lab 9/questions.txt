@@ -1,0 +1,9 @@
+12.1.  Write a java program to create two threads. One thread prints number from 1-10. 
+Another thread print alphabet from A-J. Both should run simultaneously. 
+
+12.2. Create a class implementing Runnbale interface that
+ prints a multiplication table of a given number. 
+
+12.3. Create a shared counter varibale accessed by two thread. One thread
+ increments it another thread decrements it. Ensure synchronous transaction
+  so that the final value is correct.

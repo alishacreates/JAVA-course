@@ -1,38 +1,5 @@
 /*
-7.1. Develop a Java program that models a Student Result System using a Student class.
-
-Requirements:
-
-1. Create a class named Student with the following data members:
-   - rollNo
-   - name
-   - course
-   - marks[]
-   - total
-   - percentage
-   - grade
-
-2. Use a parameterized constructor to initialize:
-   - Roll Number
-   - Name
-   - Course
-
-   (These values must be taken using command line arguments.)
-
-3. Accept 5 subject marks using Scanner or BufferedReader.
-
-4. Implement member methods:
-   - calculateResult() -> Calculates total, percentage, and grade
-   - displayResult() -> Displays formatted result using printf()
-
-5. Grade Criteria:
-   Percentage    Grade
-   >= 90         A+
-   >= 80         A
-   >= 70         B
-   >= 60         C
-   >= 50         D
-   < 50          F
+7.2. Develop a Java program that models a Student Result System for n number of students.
 */
 
 import java.util.Scanner;
@@ -95,13 +62,29 @@ public class Student {
        System.out.println("grade: "+ grade);
     }
     public static void main(String[] args) {
-        System.out.println("name: alisha, sap: 590013908, batc: 1");
-        int a = Integer.parseInt(args[0]);
-        Student s = new Student(a, args[1], args[2]);
+        System.out.println("name: alisha, sap: 590013908, batch: 1");
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter number of students n: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+        
+        for(int i = 1; i<=n; i++){
+         System.out.println("enter the name: ");
+        String name = sc.nextLine();
+        System.out.println("enter the roll number: ");
+         int rolln = sc.nextInt();
+         sc.nextLine();
+         System.out.println("enter the course: ");
+        String course = sc.nextLine();
+        sc.nextLine();
+
+
+        Student s = new Student(rolln, name, course);
        s.inputMarks();
        s.calculateResult();
        s.displayResult();
+        } 
     }
 
 }
