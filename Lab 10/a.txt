@@ -1,1 +1,14 @@
-13.1 write a java program to create a file and write your name, course and semester into it using fileWriter 
+
+13.1. Write a Java program to:
+• Take student details (ID, Name, Marks) from user
+• Store them in a file
+• Read and display all records
+13.2. Write a Java program to copy the contents of one file (source.txt) into another file
+(destination.txt) using FileReader and FileWriter.
+13.3. Write a Java program to read a file and count:
+• Total number of characters
+• Total number of words
+• Total number of lines
+13.4. Write a Java program to search for a specific word in a file and display the number of
+occurrences.
+13.5. Write a Java program to replace all occurrences of a given word with another word in a file.
